@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Items</title>
+    <style>
+          .left {
+            text-align: left;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .justify {
+            text-align: justify;
+        }
+        .container {
+            display: flex;
+            height: 200px;
+            background-color: lightgray;
+        }
+        .item {
+            width: 100px;
+            background-color: lightcoral;
+            margin: 10px;
+        }
+        align-start {
+            align-items: flex-start;
+        }
+
+        .align-end {
+            align-items: flex-end;
+        }
+        .align-center {
+            align-items: center;
+        }
+
+        .align-stretch {
+            align-items: stretch;
+        }
+
+    </style>
+</head>
+<body>  
+    <p class="left">This text is aligned to the left.</p>
+    <p class="center">This text is centered.</p>
+    <p class="right">This text is aligned to the right.</p>
+    <p class="justify">This is some justified text. The words will be stretched so that both the left and right edges of the paragraph are aligned, which is often used in newspapers and magazines.</p>
+    <div class="container align-start"></div>
+        <div class="item">Start</div>
+        <div class="item">Start</div>
+    </div>
+
+    <div class="container align-end">
+        <div class="item">End</div>
+        <div class="item">End</div>
+    </div>
+    <div class="container align-center">
+        <div class="item">Center</div>
+        <div class="item">Center</div>
+    </div>
+
+    <div class="container align-stretch">
+        <div class="item">Stretch</div>
+        <div class="item">Stretch</div>
+    </div>
+
+</body>
+</html>

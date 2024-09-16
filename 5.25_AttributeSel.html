@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+        /* Basic Attribute Selector */
+        [data-role] {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+        }
+        /*  Attribute Selector with Specific Value */
+        [type="text"] {
+            border: 2px solid blue;
+        }
+        [type="button"]{
+            background-color: burlywood;
+            color: black;
+        }
+        [type="button"]:hover{
+            background-color: rgb(11, 10, 9);
+            color: rgb(243, 28, 28);
+        }
+
+        /*   Attribute Selector with Value Containing Substring*/
+        [href*="example"]{
+            text-decoration: none;
+
+
+        }
+        [href*="test"]{
+            background-color: brown;
+
+        }
+        [href^="https://"]{
+            background-color: brown;
+
+        }
+
+    
+
+    </style>
+</head>
+<body>
+    <div data-role="admin">Admin Panel</div>
+    <div data-role="user">User Panel</div>
+    <div>No Data Role</div>
+    <input type="text" placeholder="Text Input"><br>
+    <input type="password" placeholder="Password Input"><br><br>
+    <input type="button" value="Submit"><br>
+    <br>
+    <hr>
+    <a href="https://example.com">Example Link</a>
+    <a href="https://test.com">Test Link</a>
+    <a href="https://secure.com">Secure Link</a>
+    <a href="http://insecure.com">Insecure Link</a>
+    
+    
+</body>
+</html>

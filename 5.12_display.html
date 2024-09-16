@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIsplay Properties</title>
+    <style>
+          /* Display as block */
+          .block-element {
+            display: block;
+            width: 100%;
+            background-color: lightblue;
+            margin-bottom: 10px;
+        }
+         /* Display as inline */
+         .inline-element {
+            display: inline;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+         /* Display as inline-block */
+         .inline-block-element {
+            display: inline-block;
+            width: 150px;
+            height: 50px;
+            background-color: lightcoral;
+            margin-bottom: 10px;
+        }
+        /* Hidden element */
+        .hidden-element {
+            display: none;
+        }
+        /* Flex container */
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            background-color: lightyellow;
+        }
+        .flex-item{
+            background-color: cadetblue;
+        }
+
+          /* Grid container */
+          .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            background-color: lightgray;
+        }
+        .grid-item {
+            background-color: peachpuff;
+            padding: 20px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h3>Block Element</h3>
+    <div class="block-element">This is a block element.</div>
+
+    <h3>Inline Elements</h3>
+    <span class="inline-element">This is an inline element.</span>
+    <span class="inline-element">This is another inline element.</span>
+
+    <h3>Inline-Block Element</h3>
+    <div class="inline-block-element">This is an inline-block element.</div>
+
+    <h3>Hidden Element (not visible)</h3>
+    <div class="hidden-element">This text is hidden using display: none.</div>
+
+    <h3>Flexbox Layout</h3>
+    <div class="flex-container">
+        <div class="flex-item">Flex Item 1</div>
+        <div class="flex-item">Flex Item 2</div>
+        <div class="flex-item">Flex Item 3</div>
+    </div>
+
+    <h3>Grid Layout</h3>
+    <div class="grid-container">
+        <div class="grid-item">Grid Item 1</div>
+        <div class="grid-item">Grid Item 2</div>
+        <div class="grid-item">Grid Item 3</div>
+        <div class="grid-item">Grid Item 4</div>
+    </div>
+    
+</body>
+</html>

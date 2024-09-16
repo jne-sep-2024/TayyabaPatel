@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Combinator</title>
+    <style>
+        .parent > .child {
+            color: red; /* Applies to .child elements that are direct children of .parent */
+        }
+        h1 + p {
+            color: green; /* Applies to <p> elements immediately following an <h1> */
+        }
+        h2 ~ p {
+            color: orange; /* Applies to all <p> elements following an <h2> */
+        }
+        h1, h2, h3 {
+            color: purple; /* Applies to all <h1>, <h2>, and <h3> elements */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent"></div>
+        <div class="child">This is a direct child.</div>
+        <div>
+            <div class="child">This is not a direct child.</div>
+        </div>
+    </div>
+    <h1>Heading 1</h1>
+    <p>This paragraph will be green.</p>
+    <h2>h2</h2>
+    <p>This paragraph will not be green.</p>
+    <p>This paragraph will not be green.</p>
+    <p>This paragraph will not be green.</p>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <p>Paragraph</p><h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <p>Paragraph</p>
+    
+    
+    
+</body>
+</html>

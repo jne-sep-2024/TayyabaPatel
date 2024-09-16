@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-classes</title>
+    <style>
+          a {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            color: red; /* Changes link color on hover */
+        }
+        button {
+            background-color: lightblue;
+            border: none;
+            padding: 10px;
+        }
+
+        button:active {
+            background-color: darkblue; /* Changes button color when clicked */
+            color: white;
+        }
+        input {
+            border: 1px solid gray;
+            padding: 5px;
+            border: 3px solid black;
+        }
+
+        input:focus {
+            border-color: rgb(235, 16, 16); /* Changes border color when input is focused */
+            outline: none; /* Removes default focus outline */
+        }
+        li:nth-child(odd) {
+            background-color: lightgray; /* Applies to odd list items */
+        }
+
+        li:nth-child(even) {
+            background-color: white; /* Applies to even list items */
+        }
+        p:first-child {
+            color: green; /* Applies to the first <p> in its parent */
+        }
+
+        p:last-child {
+            color: red; /* Applies to the last <p> in its parent */
+        }
+  
+  
+
+
+    </style>
+</head>
+<body>
+    <!--:hover  -->
+    <a href="#">Hover over this link</a>
+
+    <!-- :active -->
+    <button>Click me</button>
+
+    <!-- :focus -->
+    <input type="text" placeholder="Focus on me">
+    
+    <!-- :nth-child(n) -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <!-- :first-child and :last-child -->
+    <div>
+        <p>First paragraph</p>
+        <p>Middle paragraph</p>
+        <p>Last paragraph</p>
+    </div>
+     
+</body>
+</html>
