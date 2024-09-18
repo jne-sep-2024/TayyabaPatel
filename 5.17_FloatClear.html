@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <style>
+         .box {
+            width: 150px;
+            height: 100px;
+            margin: 10px;
+            background-color: lightcoral;
+        }
+        .float-left {
+            float: left;
+        }
+
+        .float-right {
+            float: right;
+        }
+        .content {
+            background-color: lightgray;
+            padding: 10px;
+        }
+        .box1 {
+            width: 150px;
+            height: 100px;
+            margin: 10px;
+            background-color: lightcoral;
+        }
+
+        .float-left1 {
+            float: left;
+        }
+
+        .clear-both {
+            clear: both;
+            background-color: lightblue;
+            padding: 10px;
+        }
+        .content1 {
+            background-color: lightgray;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box float-left">Float Left</div>
+    <div class="box float-right">Float Right</div>
+
+    <div class="content">
+        This is some content that will wrap around the floated elements. The element on the left floats to the left, and the one on the right floats to the right.
+    </div>
+
+    <div class="box1 float-left1">Float Left</div>
+    <div class="box1 float-left1">Float Left</div>
+
+    <div class="content1">
+        This content wraps around the floated elements. But below, the clear property is used.
+    </div>
+
+    <div class="clear-both">Cleared both sides, so this box moves below the floated elements.</div>
+    
+</body>
+</html>

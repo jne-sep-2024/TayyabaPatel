@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Properties</title>
+    <style>
+        /* Static position (default) */
+        .static-box {
+            width: 100px;
+            height: 100px;
+            background-color: lightgray;
+        }
+        /* Relative position */
+        .relative-box {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+        }
+
+            /* Absolute position */
+        .absolute-box {
+            position: absolute;
+            top: 50px;
+            left: 150px;
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+        }
+         /* Fixed position */
+         .fixed-box {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+        }
+         /* Sticky position */
+         .sticky-box {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            padding: 10px;
+            background-color: lightyellow;
+            text-align: center;
+        }
+        .container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background-color: lightcoral;
+            margin-bottom: 200px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h3>Static Position (Default)</h3>
+    <div class="static-box">Static Box</div>
+
+    <h3>Relative Position</h3>
+    <div class="relative-box">Relative Box</div>
+
+    <h3>Absolute Position inside a Relative Container</h3>
+    <div class="container">
+        <div class="absolute-box">Absolute Box</div>
+    </div>
+
+    <h3>Fixed Position</h3>
+    <div class="fixed-box">Fixed Box</div>
+
+    <h3>Sticky Position (Scroll down)</h3>
+    <div class="sticky-box">I stick to the top when you scroll!</div>
+
+    <p style="height: 1000px;">Scroll this text to see how the sticky element behaves.</p>
+    
+</body>
+</html>

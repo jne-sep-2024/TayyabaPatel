@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline and block Propeties</title>
+    <style>
+        .inline {
+            /* display: inline-block; */
+            display: block;
+            background-color: lightblue;
+
+        }
+        .block {
+            display: inline;
+            background-color: lightcoral;
+            width: 200px;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <p>This is an <span class="inline">inline element</span> that stays on the same line as this text.</p>
+    <div class="block">This is a block element, so it takes up the full width available and starts on a new line.</div>
+    <p>This is another block element, which starts on a new line after the div above.</p>
+    
+</body>
+</html>

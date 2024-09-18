@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Handling</title>
+    <style>
+        /* Reset default margins and paddings */
+body, h1, p, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the heading */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style the paragraph */
+p#demo {
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* Style the button */
+button#btn {
+    background-color: #007bff; /* Blue background */
+    border: 2px solid #0f151c; /* Blue border */
+    border-radius: 5px;
+    padding: 10px;
+}
+/* Reset default margins and paddings */
+body, h1, h2, p, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the main heading */
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Style the secondary heading */
+h2 {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Style the paragraph */
+p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Style the image */
+img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Style the buttons */
+button {
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 5px ;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <h1>My First JavaScript Code</h1>
+    <p id="demo"></p>
+    <button id="btn" onclick="display()">Click Me To Display Date And Time</button><hr>
+    <hr>
+    <hr>
+    <br>
+    <h1>The Light Bulb</h1>
+    <h2>What Can JavaScript Do?</h2>
+    <p>JavaScript can change HTML attribute values.</p>
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+    <script>
+        function display(){
+            document.getElementById('demo').innerHTML=Date();
+
+        }
+        
+    </script>
+</body>
+</html>

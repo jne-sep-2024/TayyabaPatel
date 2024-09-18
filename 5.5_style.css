@@ -1,0 +1,26 @@
+.boxes{
+    border: 2px solid black;
+    background-color: yellow;
+    
+}
+
+#heading{
+    /* backGound Color */
+    background-color: dodgerblue;
+    /* border */
+    border: 2px solid navy;
+    /* margin */
+    margin-top: 10px ;
+    /* padding */
+    padding: 6px;
+    /* hieght */
+    height: fit-content;
+    /* width */
+    width: fit-content;
+
+}
+#para1{
+    background-color: tomato;
+    margin-left: 10px;
+    padding: 5px;
+}

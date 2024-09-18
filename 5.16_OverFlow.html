@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OverFlow Property In Css</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            border: 2px solid black;
+            margin-bottom: 20px;
+        }
+        .overflow-visible {
+            overflow: visible;
+            background-color: lightblue;
+        }
+        .overflow-hidden {
+            overflow: hidden;
+            background-color: lightgreen;
+        }
+        .overflow-scroll {
+            overflow: scroll;
+            background-color: lightcoral;
+        }
+        .overflow-auto {
+            overflow: auto;
+            background-color: lightyellow;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h3>Overflow: visible</h3>
+    <div class="box overflow-visible">
+        This content is overflowing the box, but it remains visible outside of the container. The content goes beyond the defined width and height of the box.
+    </div>
+
+    <h3>Overflow: hidden</h3>
+    <div class="box overflow-hidden">
+        This content is overflowing the box, but it will be hidden and not accessible. The extra content is clipped.
+    </div>
+
+    <h3>Overflow: scroll</h3>
+    <div class="box overflow-scroll">
+        This content is overflowing the box, but scrollbars will appear so the user can scroll to see the hidden parts of the content. This applies both horizontal and vertical scrollbars.
+    </div>
+
+    <h3>Overflow: auto</h3>
+    <div class="box overflow-auto">
+        This content is overflowing the box, but a scrollbar will only appear if necessary, depending on the content size.
+    </div>
+    
+</body>
+</html>

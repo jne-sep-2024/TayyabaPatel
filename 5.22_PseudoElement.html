@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element Selector</title>
+    <style>
+        /* ::before */
+        .quote::before {
+            content: '“'; /* Adds a quotation mark before the content */
+            font-size: 2em;
+            color: gray;
+        }
+        /* ::after*/
+        .note::after {
+            content: 'Note'; /* Adds the text 'Note' after the content */
+            font-weight: bold;
+            color: red;
+        }
+        /* ::first-line */
+        p::first-line {
+            font-weight: bold;
+            color:palevioletred;
+        }
+        ul,li::marker {
+            color: rgb(240, 12, 12); /* Changes the color of the bullet point */
+            font-size: 1.5em; /* Changes the size of the bullet point */
+        }
+        p::selection {
+            background: yellow; /* Changes the background color of selected text */
+            color: black; /* Changes the text color of selected text */
+        }
+
+    </style>
+</head>
+<body>
+    <p class="quote">This is a quote.</p>
+    <p class="note">This is an important note.</p>
+    <p>This is a paragraph where the first line is styled differently from the rest.</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    
+
+    
+</body>
+</html>
