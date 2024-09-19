@@ -136,7 +136,7 @@ function fetchingInfo(id){
             console.log(`your id is ${id}`);
             res();
 
-        })
+        },4000)
     })
 }
 
